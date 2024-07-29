@@ -1,0 +1,11 @@
+version: "2"
+services:
+  inf-auth-webapp:
+    restart: always
+    image: ldr.lifafa.team:5000/inf-auth-webapp:latest
+    environment:
+        - name = production
+        - baseUrl = https://auth.lifafa.team
+    ports:
+      - "7001:7001"
+

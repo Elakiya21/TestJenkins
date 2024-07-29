@@ -1,0 +1,35 @@
+.auth-login {
+  .form-control:disabled {
+    background-color: unset;
+  }
+  .btn-custom,
+  .btn-custom:disabled,
+  .btn-custom:hover {
+    border: 2px solid #d6d6d6 !important;
+    box-shadow: 0 4px 8px #d4d0d01a !important;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: "cs-Segoe UI" !important;
+    --bs-btn-bg: white !important;
+    --bs-btn-disabled-bg: white !important;
+    --bs-btn-hover-bg: white !important;
+    --bs-btn-border-color: white !important;
+    --bs-btn-disabled-border-color: white !important;
+    --bs-btn-hover-border-color: white !important;
+    --bs-btn-active-bg: white !important;
+    --bs-btn-active-border-color: white !important;
+    --bs-btn-color: rgb(33, 37, 41);
+    --bs-btn-hover-color: rgb(33, 37, 41);
+    --bs-btn-disabled-color: rgb(33, 37, 41);
+  }
+  .inline-hr hr {
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+  }
+  @media (min-width: 768px) {
+    .inline-hr hr {
+      width: 18%;
+    }
+  }
+}

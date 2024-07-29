@@ -1,0 +1,132 @@
+
+// .header-warp {
+//     background-color: white;
+//     font-family: sans-serif;
+//     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+//     -webkit-box-shadow: 0px 0px 0px #b4a8b4;
+//     -moz-box-shadow: 0px 0px 0px #b4a8b4;
+//     box-shadow: 0px 0px 5px 0px #b4a8b4;
+//     top: 0; }
+  
+//   .sticky {
+//     position: fixed;
+//     width: 100%;
+//     top: 0; }
+  
+//   .header {
+//     padding: 1.2rem 2rem; }
+  
+//   .avatar {
+//     text-align: center;
+//     display: flex; }
+  
+//   .greeting {
+//     padding-left: 1rem;
+//     padding-top: .5rem; }
+  
+//   .side-bar-menu {
+//     display: none;
+//     padding-top: .5rem; }
+  
+//   .side-nav {
+//     position: relative;   
+//     transition: all 5s ease-in-out;
+//     z-index: 1000; 
+//     transition: 0.5s;
+//     /* padding-top: 10rem;
+//        margin: 8rem; */
+//     height: 100%;
+//     width: 75%;
+//     position: fixed;
+//     right: 0;
+//     /* background-color: #fcf8f8; */
+//     background-color: white;
+//     overflow-x: hidden; }
+  
+//   .nav-link li {
+//     padding: 1rem .8rem;
+//     list-style: none; }
+  
+//   .nav-link li a {
+//     width: 100%; }
+  
+//   .nav-link .profile {
+//     display: flex; }
+  
+//   .nav-link .profile .userData {
+//     padding-top: 0;
+//     padding-left: .6rem;
+//     background-color: theme-color(primary);
+//     color: theme-color(primary); }
+  
+//   .active-title {
+//     color: #b66dff; }
+
+//   .inactive-title {
+//       color: black; }
+
+//   .my-profile a,
+//   .my-subUser a,
+//   .my-wallet a,
+//   .my-purchase a,
+//   .my-event a,
+//   .logout a,
+//   .my-preference a {
+//     display: flex;
+//     justify-content: space-between; }
+  
+//   .profile-avatar {
+//     padding: 1.5rem 0;
+//     display: flex;
+//     flex-direction: column;
+//     padding-bottom: 0;
+//     align-items: center;
+//     justify-content: center; }
+  
+//   // .user-name h6 {
+//   //   margin-bottom: 0; }
+  
+//   // .user-name {
+//   //   padding-top: 1.2rem; }
+  
+//   .user-phone {
+//     padding-left: 2.4rem;
+//     padding-bottom: 3rem; }
+  
+//   .profiles {
+//     margin: 1rem;
+//     background-color: blanchedalmond;
+//     border-radius: 3%; }
+
+//     .side-space{
+//         padding: 1.5rem .8rem
+//     }
+// .product{
+//     #product-list1{
+
+//       display: flex;
+//       flex-wrap: wrap;
+//       justify-content: space-between;
+
+//           .flight,.hotel, .package, .gift-card, .train, .bus, .cab{
+//             width: 70px;
+//             text-align: center;
+//             margin-bottom: 1rem;
+//             .title{
+//               color:black;
+//             }
+//           } 
+//     }
+//     padding: 1rem 1rem;
+//     background-color: white;
+//     border-radius: 3%;
+// }
+
+// #product-list1::after {
+//   width: 1%;
+// }
+
+// .image-slide{
+//     padding-bottom: .8rem;
+//     overflow: hidden;
+// }

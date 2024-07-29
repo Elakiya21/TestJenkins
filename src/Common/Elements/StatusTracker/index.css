@@ -1,0 +1,135 @@
+@charset "UTF-8";
+.stepper-wrapper {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; }
+
+.stepper-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1; }
+
+@media (max-width: 768px) {
+  .stepper-item {
+    font-size: 12px;
+    color: gray; } }
+
+.stepper-item::before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  top: 12px;
+  left: -50%;
+  z-index: 2; }
+
+.stepper-item::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  top: 12px;
+  left: 50%;
+  z-index: 2; }
+
+.stepper-item .step-counter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13px;
+  /* Increased size to fit the tick mark */
+  height: 13px;
+  /* Increased size to fit the tick mark */
+  border-radius: 50%;
+  background: #ccc;
+  margin-top: 6px;
+  margin-bottom: 6px; }
+
+.stepper-item.active {
+  font-weight: bold; }
+
+.stepper-item.completed .step-counter {
+  background-color: #4bb543;
+  position: relative;
+  color: white;
+  /* Ensures tick mark is visible */ }
+
+.stepper-item.completed .step-counter::after {
+  content: "\2713";
+  /* Unicode character for a check mark */
+  font-size: 10px;
+  /* Adjust size as needed */
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 6; }
+
+.stepper-item.completed::after {
+  border-bottom: 2px solid #4bb543;
+  z-index: 3; }
+
+.stepper-item:first-child::before {
+  content: none; }
+
+.stepper-item:last-child::after {
+  content: none; }
+
+.stepper-item.completed {
+  font-size: 12px;
+  color: #4bb543; }
+
+@font-face {
+  font-family: "goomo-icon";
+  src: url("../../../fonts/goomo/goomo-icon.eot?jvx2gx");
+  src: url("../../../fonts/goomo/goomo-icon.eot?jvx2gx#iefix") format("embedded-opentype"), url("../../../fonts/goomo/goomo-icon.ttf?jvx2gx") format("truetype"), url("../../../fonts/goomo/goomo-icon.woff?jvx2gx") format("woff"), url("../../../fonts/goomo/goomo-icon.svg?jvx2gx#goomo-icon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../../../fonts/goomo/icomoon.eot?34mj1j");
+  src: url("../../../fonts/goomo/icomoon.eot?34mj1j#iefix") format("embedded-opentype"), url("../../../fonts/goomo/icomoon.ttf?34mj1j") format("truetype"), url("../../../fonts/goomo/icomoon.woff?34mj1j") format("woff"), url("../../../fonts/goomo/icomoon.svg?34mj1j#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="gm-"],
+[class*=" gm-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.gm {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "goomo-icon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.5);
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.gm-info:before {
+  content: ""; }
+
+.gm {
+  font-size: 0.7rem; }

@@ -1,0 +1,41 @@
+.auth-side-nav .accordion {
+  --bs-accordion-active-bg: white;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-active-color: #28577c;
+  --bs-accordion-body-padding-x: 4.4rem; }
+
+.auth-side-nav .accordion-body {
+  cursor: pointer; }
+
+.auth-side-nav .accordion-button:not(.collapsed) {
+  box-shadow: none; }
+
+.auth-side-nav .accordion-item:first-child,
+.auth-side-nav .accordion-item:nth-child(3),
+.auth-side-nav .accordion-item .company-admin {
+  --bs-accordion-btn-icon-transform: rotate(-90deg); }
+
+.auth-side-nav .form-check-input:checked {
+  background-color: #28577c;
+  border-color: #28577c; }
+
+.logout .accordion-item {
+  --bs-accordion-btn-icon: none; }
+
+.logout-modal .modal {
+  --bs-modal-margin: 0;
+  --bs-modal-border-radius: 40px 40px 0 0;
+  --bs-modal-padding: 1.5rem; }
+
+.logout-modal .modal-content {
+  border: 0;
+  position: fixed;
+  top: auto;
+  right: auto;
+  left: auto;
+  bottom: -1vh; }
+
+@media (min-width: 576px) {
+  .logout-modal .modal-content {
+    width: 50% !important;
+    left: 25%; } }

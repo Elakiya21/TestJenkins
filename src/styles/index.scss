@@ -1,0 +1,113 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.border,
+:root,
+[data-bs-theme="light"] {
+  --bs-border-width: 1px;
+  --bs-border-style: solid;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .border#{$infix}-top {
+      border-top: $border-width solid $border-color !important;
+    }
+    .border#{$infix}-end {
+      border-right: $border-width solid $border-color !important;
+    }
+    .border#{$infix}-bottom {
+      border-bottom: $border-width solid $border-color !important;
+    }
+    .border#{$infix}-start {
+      border-left: $border-width solid $border-color !important;
+    }
+
+    .border#{$infix}-top-0 {
+      border-top: 0 !important;
+    }
+    .border#{$infix}-end-0 {
+      border-right: 0 !important;
+    }
+    .border#{$infix}-bottom-0 {
+      border-bottom: 0 !important;
+    }
+    .border#{$infix}-start-0 {
+      border-left: 0 !important;
+    }
+
+    .border#{$infix}-x {
+      border-left: $border-width solid $border-color !important;
+      border-right: $border-width solid $border-color !important;
+    }
+
+    .border#{$infix}-y {
+      border-top: $border-width solid $border-color !important;
+      border-bottom: $border-width solid $border-color !important;
+    }
+    .border#{$infix} {
+      border-top: $border-width solid $border-color !important;
+      border-bottom: $border-width solid $border-color !important;
+      border-left: $border-width solid $border-color !important;
+      border-right: $border-width solid $border-color !important;
+    }
+  }
+}
+$utilities: map-merge(
+  $utilities,
+  (
+    "viewport-height":
+      map-merge(
+        map-get($utilities, "viewport-height"),
+        (
+          values:
+            map-merge(
+              map-get(map-get($utilities, "viewport-height"), "values"),
+              (
+                80: 80vh,
+                90: 90vh,
+                100: 100vh,
+              )
+            ),
+        )
+      ),
+  )
+);
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+.w-80{
+  width: 80% !important;
+}
+
+@media (max-width: 799px) {
+.auth-ph {
+    width: 61.66667%;
+    margin-left: 20.66667%;
+}
+}
+
+.auth-ph {
+  width: 59.66667%;
+  margin-left: 20.66667%;
+}
+
+.auth-kyc-pending, .auth-self-registration, .auth-user-verification{
+  .download-app-image img {
+    height: 50px;
+  }
+  .download-app-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (max-width: 767px) {
+    .download-app-image img {
+      height: auto;
+      width: 150px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}

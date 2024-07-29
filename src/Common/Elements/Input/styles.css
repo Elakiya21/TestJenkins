@@ -1,0 +1,14 @@
+.auth-main-nl .form-control {
+  padding: 0.675rem 0.75rem; }
+
+@media (max-width: 768px) {
+  .auth-main-nl .form-control {
+    font-size: 12px !important; } }
+
+.auth-main-nl .form-control {
+  border: var(--bs-border-width) solid gray;
+  border-radius: 0.275rem; }
+
+@media (max-width: 768px) {
+  .auth-main-nl .form-control {
+    font-size: 16px !important; } }

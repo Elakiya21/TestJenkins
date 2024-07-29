@@ -1,0 +1,53 @@
+
+@import "../../../styles/variables";
+
+.auth-side-nav {
+  .accordion {
+    --bs-accordion-active-bg: white;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-color: #28577c;
+    --bs-accordion-body-padding-x: 4.4rem;
+  }
+  .accordion-body {
+    cursor: pointer;
+  }
+  .accordion-button:not(.collapsed) {
+    box-shadow: none;
+  }
+  .accordion-item:first-child,
+  .accordion-item:nth-child(3),
+  .accordion-item .company-admin {
+    --bs-accordion-btn-icon-transform: rotate(-90deg);
+  }
+  .form-check-input:checked {
+    background-color: $auth_active_color;
+    border-color: $auth_active_color;
+  }
+}
+.logout .accordion-item {
+  --bs-accordion-btn-icon: none;
+}
+// .logout .bi{
+//   color: rgba(var(--bs-danger-rgb),var(--bs-text-opacity))!important;
+// }
+.logout-modal {
+  .modal {
+    --bs-modal-margin: 0;
+    --bs-modal-border-radius: 40px 40px 0 0;
+    --bs-modal-padding: 1.5rem;
+  }
+  .modal-content {
+    border: 0;
+    position: fixed;
+    top: auto;
+    right: auto;
+    left: auto;
+    bottom: -1vh;
+  }
+  @media (min-width: 576px) {
+    .modal-content {
+      width: 50% !important;
+      left: 25%;
+    }
+  }
+}

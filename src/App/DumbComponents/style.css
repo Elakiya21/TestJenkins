@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "cs-Segoe UI";
+  src: url("../../fonts/goomo/cs-SegoeUI.eot");
+  src: url("../../fonts/goomo/cs-SegoeUI.eot?#iefix") format("embedded-opentype"), url("../../fonts/goomo/cs-SegoeUI.woff2") format("woff2"), url("../../fonts/goomo/cs-SegoeUI.woff") format("woff"), url("../../fonts/goomo/cs-SegoeUI.ttf") format("truetype"), url("../../fonts/goomo/cs-SegoeUI.svg#SegoeUI") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "cs-Segoe UI bold";
+  src: url("../../fonts/goomo/cs-SegoeUI-Bold.eot");
+  src: url("../../fonts/goomo/cs-SegoeUI-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/goomo/cs-SegoeUI-Bold.woff2") format("woff2"), url("../../fonts/goomo/cs-SegoeUI-Bold.woff") format("woff"), url("../../fonts/goomo/cs-SegoeUI-Bold.ttf") format("truetype"), url("../../fonts/goomo/cs-SegoeUI-Bold.svg#SegoeUI-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+.auth-main-nl {
+  min-height: calc(100vh - 104px); }
+
+.auth-main-consent {
+  min-height: calc(100vh - 45px) !important; }
+
+@media (max-width: 768px) {
+  .auth-main-nl {
+    min-height: calc(100vh - 90px); }
+  .auth-main-consent {
+    min-height: calc(100vh - 90px) !important; } }
+
+body {
+  font-family: "cs-Segoe UI" !important; }
+
+.auth-main-nl a {
+  color: #0645ad !important;
+  cursor: pointer; }
+
+.auth-main-nl .container {
+  max-width: 1180px !important; }
+
+.auth-main-nl .container {
+  padding: 0px 30px; }
+
+.auth-f-bold {
+  font-family: "cs-Segoe UI Bold" !important; }
+
+.app-verion {
+  font-family: "cs-Segoe UI Bold" !important;
+  color: grey;
+  font-size: 13px; }
+
+.bi,
+.auth-active {
+  color: #28577c !important; }
+
+.auth-fs-14 {
+  font-size: 14px; }
+
+.tool-tip {
+  position: relative;
+  display: inline-block; }
+
+.tool-tip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s; }
+
+.tool-tip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent; }
+
+.tool-tip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1; }
+
+.pt-decs {
+  position: relative;
+  top: -2px; }
+
+.page {
+  transition: transform 0.5s ease-in-out;
+  transform: translate3d(100%, 0, 0); }
+
+.page.slide-in {
+  transform: translate3d(0, 0, 0); }
+
+@media (min-width: 576px) {
+  .fixed-bottom {
+    bottom: -70px !important; } }
+
+.auth-main-nl .custom-heading-1 {
+  font-size: 25px !important;
+  font-family: "cs-Segoe UI Bold" !important; }
+
+.auth-main-nl .custom-heading-2 {
+  font-size: 18px !important; }

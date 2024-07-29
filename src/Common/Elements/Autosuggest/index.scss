@@ -1,0 +1,140 @@
+// .as-wrap {
+//   &.type {
+//     .list {
+//       ul {
+//         margin-top: 250px;
+//       }
+//     }
+//   }
+//   &.cities {
+//     .list {
+//       ul {
+//         margin-top: -14px;
+//       }
+//     }
+//   }
+//   &.updateCountry,
+//   &.updateContinent {
+//     .list {
+//       ul {
+//         margin-top: 86px;
+//       }
+//     }
+//   }
+
+//   &.updateCities,
+//   &.grouptype {
+//     .list {
+//       ul {
+//         margin-top: -108px;
+//       }
+//     }
+//   }
+
+//   &.org-country {
+//     .list {
+//       ul {
+//         margin-top: -14px;
+//       }
+//     }
+//   }
+//   &.group {
+//     .list {
+//       ul {
+//         margin-top: -12px;
+//       }
+//     }
+//   }
+//   &.founding {
+//     .list {
+//       ul {
+//         margin-top: -14px;
+//       }
+//     }
+//   }
+//   &.geo-area-served {
+//     .list {
+//       ul {
+//         margin-top: -110px;
+//       }
+//     }
+//   }
+
+//   .as {
+//     width: 90%;
+//     border-radius: 0.25rem;
+//     font-size: 1rem;
+//     ul {
+//       // top: 95px;
+//       border-radius: 0.25rem;
+//       list-style-type: none;
+//       text-align: left;
+//       margin: 0;
+//       padding: 0;
+//       position: absolute;
+//       background: white;
+//       max-height: 250px;
+//       overflow-y: scroll;
+//       width: 94%;
+//       left: 16px;
+//       z-index: 1;
+//       box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12),
+//         0 8px 10px -5px rgba(0, 0, 0, 0.2);
+//     }
+//     ul::before {
+//       content: " ";
+//       border-left: 13px solid transparent;
+//       position: absolute;
+//       top: -26px;
+//       margin: 0 auto;
+//       left: 3%;
+//       border-right: 13px solid transparent;
+//       border-top: 13px solid transparent;
+//       border-bottom: 13px solid #fff;
+//     }
+//     li {
+//       padding: 10px 15px;
+//       cursor: pointer;
+//     }
+//     li:hover {
+//       background-color: rgba(128, 128, 128, 0.2);
+//     }
+//   }
+// }
+// .search-img-style {
+//   position: absolute;
+//   top: 44px;
+//   left: 412px;
+//   width: 16px;
+// }
+// .mand-field {
+//   color: #d93025;
+//   font-size: 20px;
+// }
+
+// .search-input {
+//   padding: 3px;
+//   border-radius: 6px;
+//   border-style: none; 
+// }
+
+// .search-img {
+//   position: absolute;
+//   width: 16px;
+// }
+// .search-symbol
+// {
+//   position: relative;
+// }
+// .search-symbol input
+// {
+//   display: block;
+//   width: 100%;
+//   box-sizing: border-box;
+// }
+// .search-symbol img
+// {
+//   position: absolute;
+//   top: 9px;
+//   right: 5px;
+// }
